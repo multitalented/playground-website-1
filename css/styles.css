@@ -21,27 +21,39 @@ h3 {
 }
 
 /* Menu  */
-.menu-bar {
+.nav-bar {
   background-color: #181D31;
   color: #F0E9D2;
   width: 100%;
   position: fixed;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-right: 2%;
   top: 0;
 }
 
-.menu-bar a {
+.brand {
+  color: #F0E9D2;
   display: block;
-  padding: 1% 3%;
+  position: fixed;
+  font-family: 'Pushster', cursive;
+  font-size: 3rem;
+  /* margin: 0; */
+  padding: 5px 30px;
+  z-index: 5;
+}
+
+.nav-bar a {
+  display: block;
+  padding: 20px 30px; /*1% 3%*/
   font-size: 1.5rem;
   color: #F0E9D2;
   text-decoration: none;
   text-align: center;
   float: right;
+  width: 100px;
 }
 
-.menu-bar a:hover {
+.nav-bar a:hover {
   color: #181D31;
   background-color: #F0E9D2;
 }
@@ -121,6 +133,36 @@ h3 {
   background-color: #678983;
   text-align: center;
   color: #F0E9D2;
+}
+
+@media screen and (max-width: 900px) {
+  .brand {
+    color: #F0E9D2;
+    display: inline-block;
+    position: fixed;
+    font-family: 'Pushster', cursive;
+    font-size: 3rem;
+    /* margin: 0; */
+    padding: 5px 30px;
+    z-index: 5;
+  }
+
+  .nav-bar a {
+    display: inline-block;
+    padding: 20px 30px; /*1% 3%*/
+    font-size: 1.5rem;
+    color: #F0E9D2;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    width: 100px;
+    margin-top: 75px;
+  }
+
+  .main {
+    padding-top: 150px;
+    background-color: #E6DDC4;
+  }
 }
 
 @media screen and (max-width: 600px) {
