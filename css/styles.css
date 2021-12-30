@@ -128,13 +128,13 @@ h3 {
     display: block;
   }
 
-  .first-paragraph {
+  .text-left {
     /* padding-bottom: 50px; */
     display: block;
     width: 100%;
   }
 
-  .first-image {
+  .image-right {
     display: block;
     /* max-width: 30%; */
     max-width: 80%;
@@ -143,15 +143,15 @@ h3 {
     padding: 20px 0;
   }
 
-  .second-image {
+  .text-right {
+    display: block;
+    width: 100%;
+  }
+
+  .image-left {
     display: block;
     max-width: 80%;
     margin: auto;
     padding: 20px 0;
-  }
-
-  .second-paragraph {
-    display: block;
-    width: 100%;
   }
 }
