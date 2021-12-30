@@ -1,0 +1,157 @@
+/* General page formatting */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #181D31;
+}
+
+p {
+  color: #181D31;
+  line-height: 2rem;
+}
+
+div {}
+
+h1 {}
+
+h2 {}
+
+h3 {
+  /* padding-top: 50px; */
+}
+
+/* Menu  */
+.menu-bar {
+  background-color: #181D31;
+  color: #F0E9D2;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  padding-right: 2%;
+  top: 0;
+}
+
+.menu-bar a {
+  display: block;
+  padding: 1% 3%;
+  font-size: 1.5rem;
+  color: #F0E9D2;
+  text-decoration: none;
+  text-align: center;
+  float: right;
+}
+
+.menu-bar a:hover {
+  color: #181D31;
+  background-color: #F0E9D2;
+}
+
+/* Sections */
+.main {
+  padding-top: 75px;
+  background-color: #E6DDC4;
+}
+
+.title {
+  padding: 0% 5%;
+}
+
+.main-title {}
+
+.sub-title {}
+
+.section {
+  padding: 2% 5%;
+  color: #181D31;
+}
+
+/* Section one */
+.section-one {
+  background-color: #E6DDC4;
+}
+
+.test-box {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.text-left {
+  display: flex;
+  width: 60%;
+  margin: 0;
+}
+
+.image-right {
+  display: flex;
+  /* float: center; */
+  max-width: 30%;
+  /* max-height: 100%; */
+  /* width: auto;
+  height: auto; */
+  padding-left: 50px;
+  margin: auto;
+}
+
+.text-right {
+  display: flex;
+  width: 60%;
+  margin: 0;
+}
+
+.image-left {
+  display: flex;
+  /* float: left; */
+  max-width: 30%;
+  padding-right: 50px;
+  margin: auto;
+}
+
+/* Section two */
+.section-two {
+  background-color: #F0E9D2;
+}
+
+/* Section three */
+.section-three {
+  background-color: #E6DDC4;
+}
+
+/* Footer */
+.footer {
+  background-color: #678983;
+  text-align: center;
+  color: #F0E9D2;
+}
+
+@media screen and (max-width: 600px) {
+  .test-box {
+    display: block;
+  }
+
+  .first-paragraph {
+    /* padding-bottom: 50px; */
+    display: block;
+    width: 100%;
+  }
+
+  .first-image {
+    display: block;
+    /* max-width: 30%; */
+    max-width: 80%;
+    /* max-height: 50%; */
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .second-image {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .second-paragraph {
+    display: block;
+    width: 100%;
+  }
+}
