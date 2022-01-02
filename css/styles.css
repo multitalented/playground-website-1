@@ -10,17 +10,15 @@ p {
   line-height: 2rem;
 }
 
-div {}
-
-h1 {}
-
-h2 {}
-
-h3 {
-  /* padding-top: 50px; */
+/* Navigation Menu */
+.hamburger-nav {
+  visibility: hidden;
 }
 
-/* Menu  */
+.hamburger-line {
+  visibility: hidden;
+}
+
 .nav-bar {
   background-color: #181D31;
   color: #F0E9D2;
@@ -58,12 +56,7 @@ h3 {
   background-color: #F0E9D2;
 }
 
-/* Sections */
-.main {
-  padding-top: 75px;
-  background-color: #E6DDC4;
-}
-
+/* Title Stuff under menu before main sections */
 .title {
   padding: 0% 5%;
 }
@@ -72,14 +65,15 @@ h3 {
 
 .sub-title {}
 
+/* Sections */
+.main {
+  padding-top: 75px;
+  background-color: #E6DDC4;
+}
+
 .section {
   padding: 2% 5%;
   color: #181D31;
-}
-
-/* Section one */
-.section-one {
-  background-color: #E6DDC4;
 }
 
 .test-box {
@@ -118,6 +112,11 @@ h3 {
   margin: auto;
 }
 
+/* Section one */
+.section-one {
+  background-color: #E6DDC4;
+}
+
 /* Section two */
 .section-two {
   background-color: #F0E9D2;
@@ -135,6 +134,7 @@ h3 {
   color: #F0E9D2;
 }
 
+/* Adjust to smaller screen size - tablet */
 @media screen and (max-width: 900px) {
   .brand {
     color: #F0E9D2;
@@ -165,10 +165,47 @@ h3 {
   }
 }
 
+
+/* Adjust to smaller screen size - mobile  */
 @media screen and (max-width: 600px) {
   .test-box {
     display: block;
   }
+
+  .brand {
+    visibility: hidden;
+    font-size: 2rem;
+    background-color: #181D31;
+    width: 100%;
+  }
+
+  .main {
+    padding-top: 75px;
+    background-color: #E6DDC4;
+  }
+
+
+  .full-nav {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .hamburger-nav {
+    visibility: visible;
+    position: absolute;
+    z-index: 20;
+  }
+
+  .hamburger-line {
+    visibility: visible;
+    width: 35px;
+    height: 5px;
+    color: black;
+    background-color: black;
+    margin: 6px 0;
+    z-index: 20;
+  }
+
 
   .text-left {
     /* padding-bottom: 50px; */
