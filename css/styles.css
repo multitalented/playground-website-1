@@ -19,6 +19,10 @@ p {
   visibility: hidden;
 }
 
+.full-nav {
+  visibility: visible;
+}
+
 .nav-bar {
   background-color: #181D31;
   color: #F0E9D2;
